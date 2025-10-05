@@ -1,18 +1,68 @@
-.selected {
-  font-size: 3.5rem; 
+.case-studies-section {
+  margin-top: 40px;
 }
 
+.case-studies-section h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.case-study-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.case-study-card:hover {
+  transform: translateY(-5px);
+}
+
+.case-study-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.case-study-card h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+
+.case-study-card a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.case-study-card a:hover {
+  text-decoration: underline;
+}
+
+/* .selected {
+  font-size: 3.5rem; 
+} */
+
 /* Blues */
-.designer, .portfolio, .video-productions {
+/* .designer, .portfolio, .video-productions {
     color: #415a77;
   }
 
   .video-productions:hover, .designer:hover, .portfolio:hover {
     color: #778da9;
-  }
+  } */
 
   /* Greens   */
-  .artist {
+  /* .artist {
     color: #606c38;
   }
 
@@ -27,16 +77,16 @@
 
   .musician:hover, .resume:hover {
     color: #6e4730;
-  }
+  } */
 
   /* Oranges */
-.developer {
+/* .developer {
   color: #b3845f;
 }
 
 .developer:hover {
   color: #bc6c25;
-}
+} */
 
   .home-header {
     margin-top: 5rem;
@@ -52,7 +102,27 @@
     margin-bottom: 2rem;
     }
   
-    .home-content{
+    /* .home-content{
       font-size: 1.5rem;
       text-align: left;
+      } */
+
+      .home-main {
+        display: flex;
+        align-items: center;      /* vertically center text and image */
+        justify-content: space-between; /* space between text and image */
+        gap: 20px;                /* optional spacing */
+        margin-top: 20px;
+      }
+      
+      .home-content {
+        flex: 1;                  /* let text take up available space */
+        text-align: left;
+      }
+
+      .portrait-photo {
+        width: 200px;   
+        height: 200px;      
+        border-radius: 50%; 
+        object-fit: cover; 
       }

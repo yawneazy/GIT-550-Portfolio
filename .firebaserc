@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ayolson-a18f5"
-  }
+    "default": "ayolson-a18f5",
+    "git550-portfolio": "git-550-portfolio"
+  },
+  "targets": {},
+  "etags": {}
 }
